@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    background: #f3f3f3;
+}
+
+header{
+    background: rgb(42, 10, 10);
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10%;
+    align-items: center;
+    padding-left: 50px;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+header .links-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav{
+    visibility: hidden;
+    position: absolute;
+}
+
+.links-header ul{
+    display: flex;
+    justify-content: center;
+    padding: 12px ;
+}
+
+.links-header ul li{
+    padding: 8px;
+}
+
+.links-header ul li a{
+    color: #fff;
+    font-size: 18px;
+}
+
+.links-header button{
+    cursor: pointer;
+    border: none;
+    background: #551818a6;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.links-header button:hover{
+    background: #6f0e0ea6;
+}
+
+.links-header button a{
+    color: #9c9999;
+}
+
+/*Container-public*/
+.container-public {
+    background-image: url(https://images.unsplash.com/photo-1469719847081-4757697d117a?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+.container-public .content{
+    color: #fff;
+    position: relative;
+    padding: 9% 12%;
+}
+
+.container-public .content h2{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+.container-public .content p{
+    font-size: 16px;
+}
+
+/*responsive*/
+@media (max-width: 700px) {
+
+    /*hidden header ul*/
+    .links-header ul{
+        display: none;
+    }
+
+    /*header btn*/
+    .btn-sesion button{
+        padding: 12px;
+    }
+
+    .btn-sesion button a{
+        font-size: 12px;
+    }
+
+    /*aparece nav*/
+    nav{
+        visibility: visible;
+        position: relative;
+        width: 100%;
+        height: auto;
+        background: rgb(42, 10, 10);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    nav ul {
+        display: block;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    nav ul li{
+        padding: 15px;
+    }
+
+    nav ul li a{
+        color: #f3f3f3;
+    }
+
+  
+
+}
