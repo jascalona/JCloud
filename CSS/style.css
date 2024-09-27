@@ -95,6 +95,9 @@ nav{
     font-size: 16px;
 }
 
+
+
+/*MEDIA QUERYS*/
 /*responsive*/
 @media (max-width: 700px) {
 
@@ -138,6 +141,5 @@ nav{
         color: #f3f3f3;
     }
 
-  
-
 }
+/*MEDIA QUERYS*/
